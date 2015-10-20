@@ -1,0 +1,24 @@
+<nav>
+  <h1>Hi.</h1>
+  <a href="/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+    <!--<img src="/logo.png" id="logo" alt="Blog logo"/> -->
+    <div id="logo" style="text-align:center"><span class="fa-stack fa-3x">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+  </div>
+    {% endif %}
+  </a>
+  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <div id="bio">
+    <p>here's some random tech musings</p>
+<a class="btn btn-danger" href="#">
+
+  </div>
+  <div id="social" style="text-align:center">
+    {% include social.html %}
+  </div>
+</nav>
